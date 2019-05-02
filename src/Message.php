@@ -2,13 +2,39 @@
 
 namespace inquid\fcm;
 
-use Yii;
 use wadeshuler\sms\BaseMessage;
 
 class Message extends BaseMessage
 {
 
     private $_mediaUrl;
+    private $topic;
+    private $title;
+
+    /**
+     * @return mixed
+     */
+    public function getTitle()
+    {
+        return $this->title;
+    }
+
+    /**
+     * @param mixed $title
+     */
+    public function setTitle($title)
+    {
+        $this->title = $title;
+        return $this;
+    }
+
+    /**
+     * @return string mixed
+     */
+    public function getTopic()
+    {
+        return $this->topic;
+    }
 
     /**
      * Nicename function for getTextBody()
@@ -42,6 +68,16 @@ class Message extends BaseMessage
     public function setMediaUrl($url)
     {
         $this->_mediaUrl = $url;
+
+        return $this;
+    }
+
+    /**
+     * @param string $topic
+     */
+    public function setTopic($topic)
+    {
+        $this->topic = $topic;
 
         return $this;
     }
