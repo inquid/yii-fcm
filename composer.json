@@ -4,7 +4,7 @@
     "keywords": ["yii2", "Inquid", "yii2 sms", "text message", "Firebase", "Google","FCM","Firebase Cloud Messaging"],
     "homepage": "https://inquid.co/extensions/yii-fcm",
     "type": "yii2-extension",
-    "license": "Apache-2",
+    "license": "Apache-2.0",
     "authors": [
         {
             "name": "Inquid INC",
